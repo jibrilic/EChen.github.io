@@ -2,135 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .about, .contact {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      color: #444;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .contact p {
-      font-size: 1.1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .projects {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>John Doe</h1>
-    <p>Web Developer & Designer</p>
+    <h1>Your Name</h1>
+    <p class="subtitle">Web Developer | Designer | Problem Solver</p>
   </header>
 
-  <section class="about">
+  <section id="bio">
     <h2>About Me</h2>
-    <p>
-      I am a passionate web developer with experience in building responsive and modern web applications. I specialize in HTML, CSS, JavaScript, and front-end frameworks.
-    </p>
+    <p>Hi! I'm Your Name, a passionate web developer who loves building beautiful and functional websites. I specialize in frontend development with HTML, CSS, and JavaScript.</p>
   </section>
 
-  <section class="portfolio">
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
+    <div class="project-list">
+      <article class="project">
         <h3>Project One</h3>
-        <p>A short description of your project and what tech you used.</p>
-      </div>
-      <div class="project">
+        <p>Description of the project, what technologies were used, and what you accomplished.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/yourusername/project-one" target="_blank">View Code</a> | 
+        <a href="https://live-demo-url.com" target="_blank">Live Demo</a>
+      </article>
+
+      <article class="project">
         <h3>Project Two</h3>
-        <p>Another project showcase with a brief summary.</p>
-      </div>
-      <div class="project">
-        <h3>Project Three</h3>
-        <p>Highlight your skills with this cool project example.</p>
-      </div>
+        <p>Description of the second project with similar details.</p>
+        <p><strong>Tech:</strong> React, Node.js</p>
+        <a href="https://github.com/yourusername/project-two" target="_blank">View Code</a> | 
+        <a href="https://live-demo-url2.com" target="_blank">Live Demo</a>
+      </article>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: john.doe@example.com</p>
-    <p>LinkedIn: linkedin.com/in/johndoe</p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5 &amp; CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React.js</li>
+      <li>Node.js &amp; Express</li>
+      <li>Git &amp; GitHub</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Frontend Developer - Company XYZ</h3>
+      <p><em>Jan 2023 - Present</em></p>
+      <p>Worked on creating responsive user interfaces, optimizing performance, and collaborating with designers and backend engineers.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Intern - Startup ABC</h3>
+      <p><em>Jun 2022 - Dec 2022</em></p>
+      <p>Assisted in building landing pages and improving user experience through A/B testing.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via any of the following:</p>
+    <ul>
+      <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+    </ul>
   </section>
 
   <footer>
-    &copy; 2025 John Doe. All rights reserved.
+    <p>© 2025 Your Name</p>
   </footer>
 </body>
 </html>
